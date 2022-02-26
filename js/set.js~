@@ -1,0 +1,122 @@
+function searchbox(str)
+{
+    if(str=='open')
+        {
+            $('#search').css('display','block');
+        }
+        if(str=='close')
+        {
+            $('#search').css('display','none');
+        }
+}
+
+function loginbox(str)
+{
+     
+    if(str=='open')
+        {
+            $('#loginpage').show( "clip", {direction: "horizontal"}, 500 );
+        }
+      if(str=='close')
+            {
+                 $('#loginpage').hide( "drop", {direction: "varticle"}, 1000 );
+            } 
+}
+
+$(document).ready(function(){
+    c=0;
+    $("#activesub").hide();
+    $('#cuisine').click(function(){
+        if(c==0)
+            {
+                $("#activesub").slideDown(200);
+                $('#cuisine').attr("class","fa fa-unlock");
+                c=1;
+            }
+        else
+            {
+                $("#activesub").slideUp(200);
+                $('#cuisine').attr("class","fa fa-lock");
+                c=0;
+            }
+    });
+ 
+    
+});
+
+$(document).ready(function(){
+    c=0;
+    $("#pagessub").hide();
+    $('#pages').click(function(){
+        if(c==0)
+            {
+                $("#pagessub").slideDown(200);
+                $('#pages').attr("class","fa fa-unlock");
+                c=1;
+            }
+        else
+            {
+                $("#pagessub").slideUp(200);
+                $('#pages').attr("class","fa fa-lock");
+                c=0;
+            }
+    });
+    
+    $("#showlogin").click(function(){
+    $('.loginkule').show("explode" , {pieces : 16} , 2000);
+});
+    
+});
+
+$(document).ready(function(){
+    
+    c=0;
+    $("#showpass").click(function(){
+        
+        if(c==0)
+        {
+            document.getElementById("password").setAttribute("type","text");
+            c=1;
+        }
+        else
+        {
+            document.getElementById("password").setAttribute("type", "password");
+            c=0;
+        }
+        
+    });
+    
+});
+
+function cap()
+{
+    $.ajax({
+        
+        url:'capcha.php',
+        type:'POST',
+        success:function(data){
+            
+            $("#capcha").html(data);
+            
+        }
+        
+    });
+}
+
+
+
+function getcity(tbl,id)
+{
+    $.ajax({
+        
+        url:'missing.php?tbl='+tbl+'&id='+id,
+        type:'POST',
+        success:function(data)
+        {
+            $('#'+tbl).html(data);
+        }
+        
+    });
+}
+
+

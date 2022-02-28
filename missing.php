@@ -27,11 +27,13 @@ if($_REQUEST[kona]=="loginpage")
     $pa=$_REQUEST[user];
     $paa=mysql_real_escape_string($pa);
     
-    $pas=$_REQUEST[password];
-    $pass=mysql_real_escape_string($pas);
+    $pwd=$_REQUEST[password];
+    $pass=mysql_real_escape_string($pwd);
+    // $encrypted_pwd = base64_encode($pwd);
+    $encrypted_pwd = crypt($pass, '$12$hrd$reer');
     
         
-        $a=mysql_query("select * from login where userid like '$paa' and password like '$pass'");
+        $a=mysql_query("select * from login where userid like '$paa' and password like '$encrypted_pwd'");
         $aa=mysql_fetch_array($a);
         
         if($aa[0] != "")

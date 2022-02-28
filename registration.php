@@ -13,13 +13,13 @@ if (isset($_REQUEST[send]))
         }
     }
     
-    if ($_REQUEST[password] != $_REQUEST[cpassword]) {
+    if ($_REQUEST[password] != $_REQUEST[cpassword]){
         $er1 = 1;
     }
-    if ($_SESSION[cap] != $_REQUEST[capcha]) 
-    {
-        $er2 = 1;
-    }
+    // if ($_SESSION[cap] != $_REQUEST[capcha])
+    // {
+    //     $er2 = 1;
+    // }
     
      if (strlen($_FILES[fileup][name]) > 0) 
      {
@@ -48,7 +48,9 @@ if (isset($_REQUEST[send]))
         }
     }
     
-     if ($er!=1 && $er1 != 1 && $er2 != 1 && $er3 != 1 && $er4 != 1)
+    // if ($er!=1 && $er1 != 1 && $er2 != 1 && $er3 != 1 && $er4 != 1)
+
+     if ($er!=1 && $er1 != 1 && $er3 != 1 && $er4 != 1)
     {
         $date = date('Y-m-d');
         $time = date('h:i:s:a');
@@ -57,14 +59,18 @@ if (isset($_REQUEST[send]))
         $_SESSION[date] = $date;
         
         $dtime=$_SESSION[date]. ":" . $_SESSION[time];
-  
-        
-        
-    
-        $ins =mysql_query("insert into user values('$_REQUEST[name]','$_REQUEST[address]','$_REQUEST[gender]','$_REQUEST[state]','$_REQUEST[city]','$_REQUEST[area]','$_REQUEST[email]','$_REQUEST[mobile]','$_REQUEST[userid]','$_REQUEST[password]','$_REQUEST[sque]','$_REQUEST[sans]','$path1','yes','$_REQUEST[sell]')");
-      $ins2 =mysql_query("insert into login values('$_REQUEST[userid]','$_REQUEST[password]','$dtime','$_REQUEST[sell]',0)");
-       $ins3 =mysql_query("insert into logintime values('$_REQUEST[userid]','$date','$time')");
-       $ins4=mysql_query("insert into subscriber values(0,'$_REQUEST[email]')");
+
+        $pwd = $_REQUEST['password'];
+        // $encrypted_pwd = md5($pwd);
+        // $str = 'This is an encoded string';
+        // $encrypted_pwd = base64_encode($pwd);
+        $encrypted_pwd = crypt($pwd, '$12$hrd$reer');
+
+
+        $ins =mysql_query("insert into user values('$_REQUEST[name]','$_REQUEST[address]','$_REQUEST[gender]','$_REQUEST[state]','$_REQUEST[city]','$_REQUEST[area]','$_REQUEST[email]','$_REQUEST[mobile]','$_REQUEST[userid]','$encrypted_pwd','$_REQUEST[sque]','$_REQUEST[sans]','$path1','yes','$_REQUEST[sell]')");
+        $ins2 =mysql_query("insert into login values('$_REQUEST[userid]','$encrypted_pwd','$dtime','$_REQUEST[sell]',0)");
+        $ins3 =mysql_query("insert into logintime values('$_REQUEST[userid]','$date','$time')");
+        $ins4=mysql_query("insert into svubscriber values(0,'$_REQUEST[email]')");
     
     
         move_uploaded_file($_FILES[fileup][tmp_name], $path2);
@@ -79,7 +85,7 @@ if (isset($_REQUEST[send]))
         $_SESSION[mobile]=$_REQUEST[mobile];
         $_SESSION[user] = $_REQUEST[userid];
         $_SESSION[type] = $_REQUEST[sell];
-          $_SESSION[img] =$path2;
+        $_SESSION[img] =$path2;
         
             if($_SESSION[type]!=1)
             {
@@ -199,8 +205,8 @@ if (isset($_REQUEST[send]))
                                         <div class="form-group">
                                             <label class="mylbm">Gender</label>
                                             <div class="input-group">
-                                                <input type="radio" name="gender" required="" checked="" value="2" />&nbsp;&nbsp;Male&nbsp;&nbsp;&nbsp;
-                                                <input type="radio" name="gender" required="" value="1"/>&nbsp;&nbsp;Female
+                                                <input type="radio" name="gender" required="" checked="" value="Male" />&nbsp;&nbsp;Male&nbsp;&nbsp;&nbsp;
+                                                <input type="radio" name="gender" required="" value="Female"/>&nbsp;&nbsp;Female
 
                                             </div>
                                         </div>
@@ -349,7 +355,7 @@ if (isset($_REQUEST[send]))
                                             </div>
                                         </div>
                                        
-                                        <div class="row">
+                                        <!-- <div class="row">
                                             <div class="col-md-5">
                                                 <div  style="background-image: url(images/capchaimage1.jpg);background-repeat: no-repeat;padding:1px;color:#fff;" name="dekocapcha" id="capcha">
                                                 </div>
@@ -376,7 +382,8 @@ if (isset($_REQUEST[send]))
                                             </div>
 
 
-                                        </div>
+                                        </div> -->
+
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <input type="checkbox" name="agree" title="Terms & Conditions" required/>&nbsp;&nbsp;<font>Agree Term & Condition</font>

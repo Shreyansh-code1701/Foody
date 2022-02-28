@@ -135,7 +135,7 @@ if(isset($_REQUEST[sendforget]))
 
                             <div class="form-group">    
                                 <div class="input-group">
-                                    <input type="text" name="user" placeholder="Enter Your Userid" style="padding: 15px;"  required=""  pattern='^[a-zA-Z ]+$'  class="form-control"/>
+                                    <input type="text" name="user" placeholder="Enter Your Userid" style="padding: 15px;"  required=""  pattern='^[a-zA-Z0-9@-_ ]+$'  class="form-control"/>
                                     <div class="input-group-addon regi">
                                         <i class="fa fa-user-plus"></i>
                                     </div>

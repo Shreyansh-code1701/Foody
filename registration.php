@@ -181,7 +181,7 @@ if (isset($_REQUEST[send]))
                                         <div class="form-group">
                                             <label class="mylbm">Name</label>
                                             <div class="input-group">
-                                                <input type="text" name="name" placeholder="Fill Your Name" style="padding: 15px;"  required=""  pattern='^[a-zA-Z ]+$'  class="form-control"/>
+                                                <input type="text" name="name" placeholder="Enter Your Full Name" style="padding: 15px;"  required=""  pattern='^[a-zA-Z ]+$'  class="form-control"/>
                                                 <div class="input-group-addon regi">
                                                     <i class="#"></i>
                                                 </div>
@@ -190,7 +190,7 @@ if (isset($_REQUEST[send]))
                                         <div class="form-group">
                                             <label class="mylbm">Address</label>
                                             <div class="input-group">
-                                                <input type="text" name="address" placeholder="Fill Your Address" required="" style="padding: 15px;"  pattern='^[a-zA-Z0-9-/,. ]+$'  class=" form-control"/>
+                                                <input type="text" name="address" placeholder="Enter Your Address" required="" style="padding: 15px;"  pattern='^[a-zA-Z0-9-/,. ]+$'  class=" form-control"/>
                                                 <div class="input-group-addon regi">
                                                     <i class="#"></i>
                                                 </div>
@@ -250,7 +250,7 @@ if (isset($_REQUEST[send]))
                                         <div class="form-group">
                                             <label class="mylbm">Email</label>
                                             <div class="input-group">
-                                                <input type="email" name="email" placeholder="Fill Your Email" required="" style="padding: 15px;" class="form-control"/>
+                                                <input type="email" name="email" placeholder="Enter Your Email" required="" style="padding: 15px;" class="form-control"/>
                                                 <div class="input-group-addon regi">
                                                     <i class="#"></i>
                                                 </div>
@@ -259,7 +259,7 @@ if (isset($_REQUEST[send]))
                                         <div class="form-group">
                                             <label class="mylbm">Mobile</label>
                                             <div class="input-group">
-                                                <input type="text" name="mobile" placeholder="Fill Your mobile no" style="padding: 15px;" maxlength="10" required="" pattern='^[0-9]+$' class="form-control"/>
+                                                <input type="text" name="mobile" placeholder="Enter Your mobile number" style="padding: 15px;" maxlength="10" required="" pattern='^[0-9]+$' class="form-control"/>
                                                 <div class="input-group-addon regi">
                                                     <i class="#"></i>
                                                 </div>
@@ -361,7 +361,7 @@ if (isset($_REQUEST[send]))
                                             <div class="col-md-6" >
                                                 <div class="form-group">
                                             <div class="input-group">
-                                                <input type="text" placeholder="Enter Capcha" name="capcha" required="" pattern="^[a-zA-Z0-9]+$" style="padding: 20px;" />
+                                                <input type="text" placeholder="Enter CAPTCHA" name="captcha" required="" pattern="^[a-zA-Z0-9]+$" style="padding: 20px;" />
                                                 <div class="input-group-addon regi">
                                                     <i class="#"></i>
                                                 </div>
@@ -370,7 +370,7 @@ if (isset($_REQUEST[send]))
                                                 
                                                 <?php
                                                 if ($er2 == 1) {
-                                                    echo '<font color=red size=2>Captcha is Case Sensitive</font>';
+                                                    echo '<font color=red size=2>CAPTCHA is Case Sensitive</font>';
                                                 }
                                                 ?>
                                             </div>
@@ -379,7 +379,7 @@ if (isset($_REQUEST[send]))
                                         </div>
                                         <div class="form-group">
                                             <div class="input-group">
-                                                <input type="checkbox" name="agree" title="Term & Condition" required/>&nbsp;&nbsp;<font>Agree Term & Condition</font>
+                                                <input type="checkbox" name="agree" title="Terms & Conditions" required/>&nbsp;&nbsp;<font>Agree Term & Condition</font>
                                             </div>
                                         </div>
 

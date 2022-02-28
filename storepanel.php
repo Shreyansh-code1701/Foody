@@ -11,7 +11,6 @@ require_once 'conection.php';
     {
         $k=  mysql_query("select s.statename,c.cityname,a.areaname,ss.* from state s,city c,area a,store ss where s.stateid=ss.stateid and c.cityid=ss.cityid and a.areaid=ss.areaid and ss.storeid=$_REQUEST[kona]");
         $kk=  mysql_fetch_array($k);
-        
     ?>
                                  <div class="living_box" >
                                      <table class="table table-responsive" style="width: 70%;">

@@ -4,7 +4,7 @@ body
     background: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  font-family:NixieOne-Regular;
+    font-family: 'Cabin', sans-serif;
 }
 
 body::-webkit-scrollbar
@@ -34,7 +34,7 @@ body::-webkit-scrollbar-thumb
     background: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  font-family:NixieOne-Regular;
+    font-family: 'Cabin', sans-serif;
 }
 
 .body::-webkit-scrollbar
@@ -83,8 +83,9 @@ body::-webkit-scrollbar-thumb
 
 font
 {
-    font-size: 13px;
+    font-size: 16px;
 }
+
 
 .follow a i   
 {
@@ -127,7 +128,7 @@ font
 }
 .submenu
 {
-    font-size: 14px;
+    font-size: 15px;
     color:#F8A631;
     font-weight: 300;
 }
@@ -561,7 +562,7 @@ html {
 }
 
 body {
-    font-size: 14px;
+    font-size: 15px;
     font-size: 1.4rem;
     line-height: 1.6;
     background: #fff;
@@ -687,7 +688,7 @@ h3 {
 h4,
 h5,
 h6 {
-    font-size: 14px;
+    font-size: 15px;
     font-size: 1.4rem;
 }
 
@@ -950,7 +951,7 @@ dd {
     margin-left: 15px;
 }
 .hs-header .sub-heading {
-    font-size: 14px;
+    font-size: 15px;
     font-size: 1.4rem;
     color: #acacac;
     margin: 0;
@@ -1002,7 +1003,7 @@ dd {
 }
 .ht-page-header .ht-breadcrumb {
    
-    font-size: 14px;
+    font-size: 15px;
     font-size: 1.4rem;
     font-style: italic;
 }
@@ -2789,7 +2790,7 @@ dd {
 }
 @media (max-width: 767px) {
     .hs-slider.single ul.slides .entry-small {
-        font-size: 14px;
+        font-size: 15px;
         font-size: 1.4rem;
     }
 }
@@ -3484,7 +3485,7 @@ dd {
 }
 .hs-recipe.single .entry-nutri table {
     background: transparent;
-    font-size: 14px;
+    font-size: 15px;
     font-size: 1.4rem;
     font-weight: bold;
 }
@@ -3762,7 +3763,7 @@ dd {
     margin: 5px 0;
 }
 .hs-recipe.submit .range-slider .des {
-    font-size: 14px;
+    font-size: 15px;
     position: relative;
     overflow: hidden;
     margin-top: 10px;
@@ -3850,7 +3851,7 @@ dd {
     border-radius: 50%;
 }
 .hs-events.parallax .foo-heading {
-    font-size: 14px;
+    font-size: 15px;
     font-size: 1.4rem;
     font-weight: bold;
 }
@@ -3946,7 +3947,7 @@ dd {
         font-size: 1.8rem;
     }
     .hs-events.parallax .entry.feature .meta {
-        font-size: 14px;
+        font-size: 15px;
         font-size: 1.4rem;
     }
 }
@@ -4226,7 +4227,7 @@ dd {
     }
 }
 .hs-recent-posts.single .hs-header .heading {
-    font-size: 14px;
+    font-size: 15px;
     font-size: 1.4rem;
 }
 .hs-recent-posts.single .hs-header .entry-title {
@@ -4497,7 +4498,7 @@ dd {
 }
 .hs-post.single .entry-author .author-links li:after {
     content: '.';
-    font-size: 14px;
+    font-size: 15px;
     margin: 0 3px 0 6px;
 }
 .hs-post.single .entry-author .author-links li:last-child:after {
@@ -4547,7 +4548,7 @@ dd {
 .hs-post.single .entry-title .meta-time,
 .hs-general .entry-title .meta-time {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 15px;
     font-size: 1.4rem;
     color: #f8a631;
     font-weight: 700;
@@ -5668,7 +5669,7 @@ dd {
     }
 }
 .hs-editors-choice .heading {
-    font-size: 14px;
+    font-size: 15px;
     font-size: 1.4rem;
 }
 .hs-editors-choice .entry-title {
@@ -5744,7 +5745,7 @@ dd {
     }
 }
 .hs-testimonial .hs-header .heading {
-    font-size: 14px;
+    font-size: 15px;
     font-size: 1.4rem;
 }
 .hs-testimonial .hs-header .entry-title {
@@ -6727,7 +6728,7 @@ input[type="checkbox"]:focus {
 output {
     display: block;
     padding-top: 7px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.42857;
     color: #555555;
 }
@@ -6753,7 +6754,7 @@ input[type="color"] {
     width: 100%;
     height: 34px;
     padding: 6px 12px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.42857;
     color: #555555;
     background-color: #fff;
@@ -8895,7 +8896,7 @@ table th[class*="col-"] {
 }
 .regi
 {
-    background: #f8a631;
+    /* background: #f8a631; */
 }
 
 .logmain{
@@ -8936,7 +8937,7 @@ table th[class*="col-"] {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     display: inline-block;
     color: #fff;
-    font-size: 12px;
+    font-size: 15px;
     font-size: 1.2rem;
     border:none;
 }
@@ -9225,7 +9226,7 @@ to
 
 .profile-desk .designation{
     color: #49586e;
-    font-size: 14px;
+    font-size: 15px;
     text-transform: uppercase;
     margin-bottom: 30px;
     display: inline-block;
@@ -9707,7 +9708,7 @@ ul.p-info .desk {
 
 .shippingbill
 {
-    font-size: 14px;
+    font-size: 15px;
     text-transform: capitalize;
 }
 
@@ -10076,7 +10077,7 @@ ul.p-info .desk {
 
 .ffont
 {
-    font-size: 14px !important;
+    font-size: 15px !important;
     
 }
 .fffont

@@ -71,13 +71,7 @@
         <i class="fa fa-mobile" style="font-size: 17px;"></i><font title="Tollfree no">&nbsp;1800 -123- 456</font>
     </div>
     <div class=" col-md-3 col-sm-12 col-xs-12 ">
-        <div id="google_translate_element"></div><script type="text/javascript">
-            function googleTranslateElementInit() {
-                new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-            }
-        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-   
-        
+        <div id="google_translate_element"></div>
     </div>
     
     <div class=" col-md-offset-1 col-md-2  col-sm-12 col-xs-12 follow " style="margin-top: 0.5%;">

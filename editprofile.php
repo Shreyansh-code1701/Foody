@@ -63,7 +63,7 @@ if (isset($_REQUEST[send]))
                 <div class="container">
                     <div class="inner">
                         <div class="col-md-12 col-sm-12 col-xs-12 text-center " >
-                            <i class="fa fa-star" ></i>&nbsp;&nbsp;<font style="font-size:30px;">U</font><b style="color: #F8A631;">SER</b>&nbsp;<font style="font-size:30px;">P</font><b style="color:#F8A631;">R<i class="fa fa-circle" ></i>FILE</b>&nbsp;&nbsp;<i class="fa fa-star"></i> 
+                        <font style="font-size:30px;">User Profile</font>
                         </div>
 
                     </div>
@@ -85,7 +85,7 @@ if (isset($_REQUEST[send]))
 
                                         <div class="sellerprofile-pic text-center " style="padding: 10px;">
                                             <div class="sellerprofile-pic text-center uppic"style="position:absolute" >
-                                                <input type="file" name="updatepic"class="dpcont" style="width:91%;" onchange="picc(this);" />
+                                                <input type="file" name="updatepic"class="dpcont" style="width:91%;" accept=".png, .jpg, .jpeg" onchange="picc(this);" />
                                             </div>
                                             <?php
                                             $in = mysql_query("select * from user where userid like '$_SESSION[user]' ");

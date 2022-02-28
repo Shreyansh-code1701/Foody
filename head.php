@@ -15,8 +15,12 @@
     <meta name="format-detection" content="telephone-no" />
     <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css" />
 
-    <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700,900' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Dosis:700' rel='stylesheet' type='text/css' />
+<!--    <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700,900' rel='stylesheet' type='text/css' />-->
+<!--    <link href='http://fonts.googleapis.com/css?family=Dosis:700' rel='stylesheet' type='text/css' />-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet" type='text/css'> 
 
     <link rel="stylesheet" href="css/plugins.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -26,15 +30,14 @@
 
     <link rel="stylesheet" href="css/scroll/style.css"/>
 
-    <link href="Cutive_Mono/CutiveMono-Regular.ttf" />
+    <link href="Cabin/Cabin-Bold.ttf" />
     
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/plugins.js" type="text/javascript"></script>
     <script src="js/custom.js" type="text/javascript"></script>
     <script src="js/set.js" type="text/javascript"></script>
 
-
-         <script type="text/javascript">
+    <script type="text/javascript">
        
 
 cn=0;
@@ -105,15 +108,6 @@ function login()
     js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-
-
-
-
-
-
 </head>
 
 

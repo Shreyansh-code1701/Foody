@@ -126,7 +126,7 @@ if(isset($_REQUEST[sendforget]))
                 <div class="row ">
                 
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center ">
-                        <i class="fa fa-star" ></i>&nbsp;&nbsp;<font style="font-size:30px;">F</font><b style="color: #F8A631;">ORGOT</b>&nbsp;<font style="font-size:30px;">P</font><b style="color: #F8A631;">ASSWORD</b>&nbsp;&nbsp;<i class="fa fa-star"></i> 
+                    <font style="font-size:30px;">Forget Password?</font>
                     </div>
                        
                     <br/><br/><br/>

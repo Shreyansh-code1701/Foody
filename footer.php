@@ -201,7 +201,7 @@
                 <div class="container ">
                     <div class="row">
                         <div class="col-md-11">
-                            <p class="text-center" style="font-size:13px; ">Copyright &copy; 2015 Food Locker All Rights Resevered | Created By : <a href="" >Signature Infosys</a></p>
+                            <p class="text-center" style="font-size:13px; ">Copyright &copy; 2022 Food Locker All Rights Resevered</p>
                         </div>
                         <div class="col-md-1 text-right" >
                        

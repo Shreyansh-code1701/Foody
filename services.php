@@ -25,7 +25,7 @@ $_SESSION[page] = "services";
                 <div class="container">
                     <div class="inner">
                         <div class="col-md-12 col-sm-12 col-xs- text-center " >
-                            <i class="fa fa-star" ></i>&nbsp;&nbsp;<font style="font-size:30px;">S</font><b style="color: #F8A631;">ERVICE</b>&nbsp; <font style="font-size:30px;">F</font><b style="color:#F8A631;"><i class="fa fa-circle" ></i><i class="fa fa-circle" ></i>D</b>&nbsp;<font style="font-size:30px;">L</font><b style="color: #F8A631;">OCKER</b>&nbsp;&nbsp;<i class="fa fa-star"></i> 
+                        <font style="font-size:30px;">Services By Food Locker</font>
                         </div>
 
                     </div>
@@ -38,7 +38,7 @@ $_SESSION[page] = "services";
                 <BR></br>
                 <div class="col-md-6" 
                      <font ><i class=" fa fa-hand-o-right"> </i>&nbsp;<b class="hightitle" style="color: #F8A631;">Late Night Delivery</b></font><br><br>
-                    <p  style="font-size:13px;" ><font style="font-size:30px;">F</font><b style="color:#F8A631;"><i class="fa fa-circle" ></i><i class="fa fa-circle" ></i>D</b>&nbsp;<font style="font-size:30px;">L</font><b style="color: #F8A631;">OCKER</b>&nbsp;&nbsp;  is the best way to find <b>Late Night restaurants that deliver to you.</b> Whether looking for breakfast, 
+                     <font style="font-size:30px;">Food Locker</font>&nbsp;&nbsp;  is the best way to find <b>Late Night restaurants that deliver to you.</b> Whether looking for breakfast, 
                     lunch, dinner or late night snack, FooDLockeR has it all. Read restaurants reviews, 
                     browse restaurants menus and easily order online from any restaurant with no extra charge!!!
                     The best way to find Late Night delivery restaurants that deliver to you, 
@@ -57,8 +57,7 @@ $_SESSION[page] = "services";
                 <BR></br>
                 <div class="col-md-6" >
                     <font ><i class=" fa fa-hand-o-right"> </i>&nbsp;<b class="hightitle" style="color: #F8A631; font-size: 14px;"> Home Delivery</b></font><br><br>
-                    <p  style="font-size:13px;" ><font style="font-size:30px;">F</font><b style="color:#F8A631;"><i class="fa fa-circle" ></i><i class="fa fa-circle" ></i>D</b>&nbsp;<font style="font-size:30px;">L</font><b style="color: #F8A631;">OCKER</b>&nbsp;&nbsp; In the shopping cart, you will receive an Estimated Delivery Date.<br><b> Home Delivery</b> Date    
-                                        Please note that this is not a guaranteed delivery date for your order. 
+                    <font style="font-size:30px;">Food Locker</font>&nbsp;&nbsp; In the shopping cart, you will receive an Estimated Delivery Date.<br><b> Home Delivery Date Please note that this is not a guaranteed delivery date for your order. 
                                         Some areas may take longer due to the frequency of deliveries to the 
                                         delivery zip code. Our system calculates this estimated date considering 
                                         the total amount of time to process your order including: packaging, 
@@ -78,7 +77,7 @@ $_SESSION[page] = "services";
                 <BR></br>
                 <div class="col-md-6" >
                     <font><i class=" fa fa-hand-o-right"></i>&nbsp;<b class="hightitle" style="color: #F8A631; font-size: 16px;"> Live Solution</b></font><br><br>
-                   <p  style="font-size:13px;" > <font style="font-size:30px;">F</font><b style="color:#F8A631;"><i class="fa fa-circle" ></i><i class="fa fa-circle" ></i>D</b>&nbsp;<font style="font-size:30px;">L</font><b style="color: #F8A631;">OCKER</b>&nbsp;&nbsp;This document (the Privacy Policy) describes the Live the Solution (We or Us or Our)
+                    <font style="font-size:30px;">Food Locker</font>&nbsp;&nbsp;This document (the Privacy Policy) describes the Live the Solution (We or Us or Our)
                                         policy regarding personal information, ongoing communication, site security and overall site 
                                         usage of LiveTheSolution.org (Website). Those provisions apply solely to online activities 
                                         and are not necessarily applicable to practices we may engage in outside of our Website. Use 

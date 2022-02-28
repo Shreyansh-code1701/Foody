@@ -3,7 +3,7 @@ require_once 'conection.php';
 
 if (isset($_REQUEST[send])) 
 {
-    $in = mysql_query($in,"select * from registration");
+    $in = mysql_query("select * from registration");
     while ($inn = mysql_fetch_array($in))
     {
         if (stristr($inn[0], $_REQUEST[userid])) 
@@ -100,7 +100,32 @@ if (isset($_REQUEST[send]))
 
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+    <head>
+    <script>
+          
+          // Function to check Whether both passwords
+          // is same or not.
+          function checkPassword(form) {
+              password1 = form.password.value;
+              password2 = form.cpassword.value;
 
+              // If password not entered
+              if (password1 == '')
+                  alert ("Please enter Password");
+                    
+              // If confirm password not entered
+              else if (password2 == '')
+                  alert ("Please enter confirm password");
+                    
+              // If Not same return False.    
+              else (password1 != password2) {
+                  alert ("\nPassword did not match: Please try again...")
+                  return false;
+              }
+          }
+      </script>
+
+    </head>
     <?php
     require_once 'head.php';
     ?>
@@ -120,7 +145,7 @@ if (isset($_REQUEST[send]))
                 <div class="container">
                     <div class="inner">
                         <div class="col-md-12 col-sm-12 col-xs-12 text-center " >
-                            <i class="fa fa-star" ></i>&nbsp;&nbsp;<font style="font-size:30px;">C</font><b style="color: #F8A631;">REATE</b>&nbsp;<font style="font-size:30px;">A</font><b style="color: #F8A631;">CCOUNT</b>&nbsp; <font style="font-size:30px;">F</font><b style="color:#F8A631;"><i class="fa fa-circle" ></i><i class="fa fa-circle" ></i>D</b>&nbsp;<font style="font-size:30px;">L</font><b style="color: #F8A631;">OCKER</b>&nbsp;&nbsp;<i class="fa fa-star"></i> 
+                        <font style="font-size:30px;">Sign Up</font>
                         </div>
 
                     </div>
@@ -142,14 +167,13 @@ if (isset($_REQUEST[send]))
                             <h3 class="widget-title" style="font-size: 15px;">CREATE ACCOUNT</h3>
                             
                                 
-                                <form action="" method="post" name="registration" enctype="multipart/form-data" class="maru">
+                                <form action="" onSubmit="return checkPassword(this)" method="post" name="registration" enctype="multipart/form-data" class="maru">
 
                                         <div class="form-group">
-                                            <label class="mylbm">Type</label>
+                                            <label for="sell" class="mylbm">Type</label>
                                             <div class="input-group">
-                                                <input type="radio" name="sell"  required="" checked=""  value="2" />&nbsp;&nbsp;Member&nbsp;&nbsp;&nbsp;
-                                                
-                                                <input type="radio" name="sell"  required="" value="1"/>&nbsp;&nbsp;Seller
+                                                <input type="radio" name="sell" required="" checked="" value="2" />&nbsp;&nbsp;Member&nbsp;&nbsp;&nbsp;
+                                                <input type="radio" name="sell" required="" value="1"/>&nbsp;&nbsp;Seller
 
                                             </div>
                                         </div>
@@ -159,7 +183,7 @@ if (isset($_REQUEST[send]))
                                             <div class="input-group">
                                                 <input type="text" name="name" placeholder="Fill Your Name" style="padding: 15px;"  required=""  pattern='^[a-zA-Z ]+$'  class="form-control"/>
                                                 <div class="input-group-addon regi">
-                                                    <i class="fa fa-user-plus"></i>
+                                                    <i class="#"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -168,15 +192,15 @@ if (isset($_REQUEST[send]))
                                             <div class="input-group">
                                                 <input type="text" name="address" placeholder="Fill Your Address" required="" style="padding: 15px;"  pattern='^[a-zA-Z0-9-/,. ]+$'  class=" form-control"/>
                                                 <div class="input-group-addon regi">
-                                                    <i class="fa fa-building "></i>
+                                                    <i class="#"></i>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="mylbm">Gender</label>
                                             <div class="input-group">
-                                                <input type="radio" name="gender"  required="" checked=""  value="male" />&nbsp;&nbsp;<i class="fa fa-male" style="font-size: 20px;"></i>&nbsp;&nbsp;&nbsp;
-                                                <input type="radio" name="gender"  required="" value="female"/>&nbsp;&nbsp;<i class="fa fa-female" style="font-size: 20px;"></i>
+                                                <input type="radio" name="gender" required="" checked="" value="2" />&nbsp;&nbsp;Male&nbsp;&nbsp;&nbsp;
+                                                <input type="radio" name="gender" required="" value="1"/>&nbsp;&nbsp;Female
 
                                             </div>
                                         </div>
@@ -198,7 +222,7 @@ if (isset($_REQUEST[send]))
                                                             ?>
 
                                                         </select>
-                                                        <div class="input-group-addon regi"><i class="fa fa-globe "></i></div>
+                                                        <div class="input-group-addon regi"><i class="#"></i></div>
                                                     </div>
 
                                                 </div>
@@ -208,7 +232,7 @@ if (isset($_REQUEST[send]))
                                                         <select name="city" class="form-control" id="city" onchange="getcity('area',this.value);" >
                                                             <option>-Select City-</option>
                                                         </select>
-                                                        <div class="input-group-addon regi"><i class="fa fa-globe "></i></div>
+                                                        <div class="input-group-addon regi"><i class="#"></i></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
@@ -217,7 +241,7 @@ if (isset($_REQUEST[send]))
                                                         <select name="area" class="form-control" id="area">
                                                             <option>-Select Area-</option>
                                                         </select>
-                                                        <div class="input-group-addon regi"><i class="fa fa-globe "></i></div>
+                                                        <div class="input-group-addon regi"><i class="#"></i></div>
                                                     </div>
                                                 </div>
 
@@ -228,7 +252,7 @@ if (isset($_REQUEST[send]))
                                             <div class="input-group">
                                                 <input type="email" name="email" placeholder="Fill Your Email" required="" style="padding: 15px;" class="form-control"/>
                                                 <div class="input-group-addon regi">
-                                                    <i class="fa fa-envelope-o "></i>
+                                                    <i class="#"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -237,39 +261,39 @@ if (isset($_REQUEST[send]))
                                             <div class="input-group">
                                                 <input type="text" name="mobile" placeholder="Fill Your mobile no" style="padding: 15px;" maxlength="10" required="" pattern='^[0-9]+$' class="form-control"/>
                                                 <div class="input-group-addon regi">
-                                                    <i class="fa fa-phone "></i>
+                                                    <i class="#"></i>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="mylbm">User id</label>
+                                            <label class="mylbm">User ID</label>
                                             <div class="input-group">
-                                                <input type="text" name="userid" placeholder="Fill Your User Id" required="" style="padding: 15px;" pattern='^[a-zA-Z0-9@-_ ]+$' class="form-control"/>
+                                                <input type="text" name="userid" placeholder="Enter the User ID" required="" style="padding: 15px;" pattern='^[a-zA-Z0-9@-_ ]+$' class="form-control"/>
                                                 <div class="input-group-addon regi">
-                                                    <i class="fa fa-user "></i>
+                                                    <i class="#"></i>
                                                 </div>
                                             </div>
                                             <?php
                                                 if ($er1 == 1) {
-                                                    echo "<font color=red size=2> Already Exist..</font>";
+                                                    echo "<font color=red size=2>Username is not available.</font>";
                                                 }
                                             ?>
                                         </div>
                                         <div class="form-group">
                                             <label class="mylbm">Password</label>
                                             <div class="input-group">
-                                                <input type="password" name="password" placeholder="************" id="pass" required="" pattern='^[a-zA-Z0-9-,/?()*&%$#! ]{5,20}+$' class="form-control"/>
+                                                <input type="password" name="password" placeholder="Create Your Password" id="pass" required="" pattern='^[a-zA-Z0-9-,/?()*&%$#! ]{5,20}+$' class="form-control"/>
                                                 <div class="input-group-addon regi" id="sw" style="cursor:pointer;">
-                                                    <i class="fa fa-shield " id="sw" style="cursor:pointer;"></i>
+                                                    <i class="#" id="sw" style="cursor:pointer;"></i>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="mylbm">Conform Password</label>
                                             <div class="input-group">
-                                                <input type="password" name="cpassword" id="cpass" placeholder="************" style="padding: 15px;" pattern='^[a-zA-Z0-9-,/?()*&%$#! ]{5,20}+$' class="form-control"/>
+                                                <input type="password" name="cpassword" id="cpass" placeholder="Confirm Your Password" style="padding: 15px;" pattern='^[a-zA-Z0-9-,/?()*&%$#! ]{5,20}+$' class="form-control"/>
                                                 <div class="input-group-addon regi" id="csw" style="cursor:pointer;">
-                                                    <i class="fa fa-shield " id="csw" style="cursor:pointer;"></i>
+                                                    <i class="#" id="csw" style="cursor:pointer;"></i>
                                                 </div>
                                             </div>
                                             <?php
@@ -292,7 +316,7 @@ if (isset($_REQUEST[send]))
                                                     <option>What is your favorite food ?</option>
                                                 </select>
                                                 <div class="input-group-addon regi">
-                                                    <i class="fa fa-question "></i>
+                                                    <i class="#"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -301,7 +325,7 @@ if (isset($_REQUEST[send]))
                                             <div class="input-group">
                                                 <input type="text" name="sans" placeholder="Secure Answer" required="" pattern='^[a-zA-Z ]+$'  class="form-control"/>
                                                 <div class="input-group-addon regi">
-                                                    <i class="fa fa-pencil "></i>
+                                                    <i class="#"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -310,7 +334,7 @@ if (isset($_REQUEST[send]))
                                             <label class="mylbm">Choose Your Profile</label>
                                             <div class="input-group">
 
-                                                <input type="file" name="fileup" class="form-control" required=""/>
+                                                <input type="file" name="fileup" class="form-control" required="" accept=".png, .jpg, .jpeg"/>
                                                 <?php
                                                     if ($er3 == 1)
                                                     {
@@ -339,14 +363,14 @@ if (isset($_REQUEST[send]))
                                             <div class="input-group">
                                                 <input type="text" placeholder="Enter Capcha" name="capcha" required="" pattern="^[a-zA-Z0-9]+$" style="padding: 20px;" />
                                                 <div class="input-group-addon regi">
-                                                    <i class="fa fa-pencil "></i>
+                                                    <i class="#"></i>
                                                 </div>
                                             </div>
                                         </div>
                                                 
                                                 <?php
                                                 if ($er2 == 1) {
-                                                    echo '<font color=red size=2>not match..!</font>';
+                                                    echo '<font color=red size=2>Captcha is Case Sensitive</font>';
                                                 }
                                                 ?>
                                             </div>
@@ -355,7 +379,7 @@ if (isset($_REQUEST[send]))
                                         </div>
                                         <div class="form-group">
                                             <div class="input-group">
-                                                <input type="checkbox" name="agree" title="Term & Condition" checked="" disabled="" />&nbsp;&nbsp;<font>Agree Term & Condition</font>
+                                                <input type="checkbox" name="agree" title="Term & Condition" required/>&nbsp;&nbsp;<font>Agree Term & Condition</font>
                                             </div>
                                         </div>
 

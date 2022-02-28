@@ -104,7 +104,7 @@ require_once 'conection.php';
                     <nav id="ht-main-nav">
                         <ul>
                             <?php
-                            if ($_SESSION[page] == "index") {
+                            if ($_SESSION['page'] == "index") {
                                 ?>
                                 <li><a href="index.php" class="activemenu" >HOME</a></li>
                                 <?php
@@ -116,7 +116,7 @@ require_once 'conection.php';
                             ?>
                             <li class="mega-menu menu-item-has-children">
                                 <?php
-                                if ($_SESSION[page] == "cuisine") {
+                                if ($_SESSION['page'] == "cuisine") {
                                     ?>
                                     <a href="#" class="ero activemenu">CUISINE&nbsp;<i class="fa fa-caret-down"></i></a>
                                     <?php
@@ -197,7 +197,7 @@ require_once 'conection.php';
                             </li>
 
                              <?php
-                            if ($_SESSION[page] == "food") {
+                            if ($_SESSION['page'] == "food") {
                                 ?>
                                 <li><a href="filter.php" class="blog activemenu">FOOD</a></li>
                                 <?php
@@ -209,7 +209,7 @@ require_once 'conection.php';
                             ?>
                             
                             <?php
-                            if ($_SESSION[page] == "restaurant") {
+                            if ($_SESSION['page'] == "restaurant") {
                                 ?>
                                 <li><a href="restaurant.php" class="activemenu">RESTAURANT</a></li>
                                 <?php
@@ -220,7 +220,7 @@ require_once 'conection.php';
                             }
                             ?>
                                  <?php
-if ($_SESSION[page] == "bestseller") {
+if ($_SESSION['page'] == "bestseller") {
     ?>
 
                                 <li><a href="bestseller.php" class="activemenu">BEST SELLER</a></li>
@@ -236,7 +236,7 @@ if ($_SESSION[page] == "bestseller") {
                         </ul>
                         <ul>
                             <?php
-                            if ($_SESSION[page] == "contact") {
+                            if ($_SESSION['page'] == "contact") {
                                 ?>
                                 <li><a href="contact.php" class="activemenu">CONTACT</a></li>
                                 <?php
@@ -248,7 +248,7 @@ if ($_SESSION[page] == "bestseller") {
                             ?>
                             
                             <?php
-                            if ($_SESSION[page] == "feedback") {
+                            if ($_SESSION['page'] == "feedback") {
                                 ?>
                                 <li><a href="feedback.php" class="activemenu">FEEDBACK</a></li>
                                 <?php
@@ -259,7 +259,7 @@ if ($_SESSION[page] == "bestseller") {
                             }
                             ?>
                             <?php
-                            if ($_SESSION[page] == "about") {
+                            if ($_SESSION['page'] == "about") {
                                 ?>
                                 <li><a href="about.php" class="activemenu">ABOUT</a></li>
                                 <?php
@@ -274,7 +274,7 @@ if ($_SESSION[page] == "bestseller") {
   
              
 <?php
-if ($_SESSION[page] == "services") {
+if ($_SESSION['page'] == "services") {
     ?>
 
                                 <li><a href="services.php" class="activemenu">SERVICES</a></li>
@@ -286,7 +286,7 @@ if ($_SESSION[page] == "services") {
                             }
                             ?>
                             <?php
-                            if ($_SESSION[page] == "sitemap") {
+                            if ($_SESSION['page'] == "sitemap") {
                                 ?>
                                 <li><a href="sitemap.php" class="activemenu">SITE MAP</a></li>
                                 <?php

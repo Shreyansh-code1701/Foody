@@ -25,7 +25,7 @@ $_SESSION[page] = "policy";
                     <div class="inner">
 
                         <div class="col-md-12 col-sm-12 col-xs-12 text-center ">
-                            <i class="fa fa-star" ></i>&nbsp;&nbsp;<font style="font-size:30px;">P</font><b style="color: #F8A631;">OLICY</b>&nbsp; <font style="font-size:30px;">F</font><b style="color:#F8A631;"><i class="fa fa-circle" ></i><i class="fa fa-circle" ></i>D</b>&nbsp;<font style="font-size:30px;">L</font><b style="color: #F8A631;">OCKER</b>&nbsp;&nbsp;<i class="fa fa-star"></i> 
+                        <font style="font-size:30px;">Food Locker Privacy and Policy</font>
                         </div>
                     </div>
                 </div>

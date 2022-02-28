@@ -81,7 +81,7 @@ while ($ss = mysql_fetch_array($sel)) {
             
             
                 <div class="col-md-12" style="padding:5px;">
-                    <p style="font-size:14px; font-weight: 600; color: #232323; text-transform: capitalize; "><?php echo $ss[0]; ?></p>
+                    <font style="font-size:14px; font-weight: 600; color: #232323; text-transform: capitalize; "><?php echo $ss[0]; ?></font>
                 </div>
       
                                                 
@@ -93,7 +93,7 @@ while ($ss = mysql_fetch_array($sel)) {
 
                                                     
                 <div class="col-md-12 col-xs-12 col-sm-12" style="padding:5px;">
-                    <i class="fa fa-rupee" ></i>&nbsp;<p><?php echo ($ss[5])*($ss[6]); ?></p>&nbsp;/-
+                    <i class="fa fa-rupee" ></i>&nbsp;<font><?php echo ($ss[5])*($ss[6]); ?></font>&nbsp;/-
                 </div>
                 
                 

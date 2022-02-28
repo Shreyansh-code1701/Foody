@@ -1,8 +1,6 @@
 <?php
     require_once 'conection.php';
-   
     unset($_SESSION[ch]);
-     
     $_SESSION[page]="index";
     
     if($_REQUEST[stid]!="")

@@ -43,7 +43,7 @@ require_once 'usersecure.php';
                 <div class="container">
                     <div class="inner">
                         <div class="col-md-12 col-sm-12 col-xs-12 text-center ">
-                            <i class="fa fa-star" ></i>&nbsp;&nbsp;<font style="font-size:30px;">B</font><b style="color: #F8A631;">ILL</b>&nbsp; <font style="font-size:30px;">M</font><b style="color:#F8A631;">I</b>&nbsp;<b style="color: #F8A631;">S</b>&nbsp;&nbsp;<i class="fa fa-star"></i> 
+                        <font style="font-size:30px;">Payment Method</font>
                         </div> 
 
                     </div>

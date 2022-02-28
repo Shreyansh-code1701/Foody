@@ -79,7 +79,7 @@ if(isset($_REQUEST[addcart]))
                 <div class="container">
                     <div class="inner">
                         <div class="col-md-12 col-sm-12 col-xs-12 text-center ">
-                            <i class="fa fa-star" ></i>&nbsp;&nbsp;<font style="font-size:30px;">P</font><b style="color: #F8A631;">RODUCT</b>&nbsp; <font style="font-size:30px;">I</font><b style="color: #F8A631;">NFORMATION</b>&nbsp; &nbsp;&nbsp;<i class="fa fa-star"></i> 
+                        <font style="font-size:30px;">Product Detail</font>
                         </div> 
 
                     </div>

@@ -25,7 +25,7 @@ $_SESSION[page] = "about";
                 <div class="container">
                     <div class="inner">
                         <div class="col-md-12 col-sm-12 col-xs-12 text-center ">
-                            <i class="fa fa-star" ></i>&nbsp;&nbsp;<p style="font-size:30px;">A</p><b style="color: #F8A631;">BOUT</b>&nbsp; <p style="font-size:30px;">F</p><b style="color:#F8A631;"><i class="fa fa-circle" ></i><i class="fa fa-circle" ></i>D</b>&nbsp;<p style="font-size:30px;">L</p><b style="color: #F8A631;">OCKER</b>&nbsp;&nbsp;<i class="fa fa-star"></i> 
+                            <font style="font-size:30px;">Who are we?</font>
                         </div> 
 
                     </div>
@@ -41,48 +41,48 @@ $_SESSION[page] = "about";
                     </div>
                     <div class="col-md-12col-sm-12 col-xs-12 text-center">
 
-                        <p style="font-size: 16px; font-weight: 600;">What is</p> <p style="font-size:30px;">F</p><b style="color:#F8A631;"><i class="fa fa-circle" ></i><i class="fa fa-circle" ></i>D</b>&nbsp;<p style="font-size:30px;">L</p><b style="color: #F8A631;">OCKER</b> ..<b>?</b></p><br>
+                        <font style="font-size: 16px; font-weight: 600;">What is</font> <font style="font-size:30px;">F</font><b style="color:#F8A631;"><i class="fa fa-circle" ></i><i class="fa fa-circle" ></i>D</b>&nbsp;<font style="font-size:30px;">L</font><b style="color: #F8A631;">OCKER</b> ..<b>?</b></font><br>
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center ">
-                        <p> foodlocker is India's most convenient online food ordering site. It connects people with the best restaurants<br> 
+                        <font> foodlocker is India's most convenient online food ordering site. It connects people with the best restaurants<br> 
                         around them. Delivering in Delhi, Bangalore, Chennai, Mumbai, Hyderabad and over 100 other cities,<br> 
                         foodlocker has the widest reach in India.<br><br>
                         We believe food is a pleasure and food ordering should be fast and definitely a fun experience. Ordering<br> 
-                        with foodlocker is as easy as a 4-step recipe: </p>
+                        with foodlocker is as easy as a 4-step recipe: </font>
                     </div>
                     <div class="row"style="margin-top: 25%;">
                         <div class="col-md-3 col-sm-12 col-xs-12 text-center ">
                             <div class="aboutborder">
                                 <div><i class="fa fa-map-marker aboutimg" style="font-size: 50px; "></i></div>
                                 <div class="aboutdes"> 1.Search</div>
-                                <p>Find restaurants that deliver to you by entering your address</p>
+                                <font>Find restaurants that deliver to you by entering your address</font>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-12 col-xs-12 text-center" >
                             <div class="aboutborder">
                                 <div><i class="fa fa-cutlery aboutimg" style="font-size: 50px; "></i></div>
                                 <div class=" aboutdes "> 2. Choose</div>
-                                <p>Browse hundreds of menus to find the food you like</p>
+                                <font>Browse hundreds of menus to find the food you like</font>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-12 col-xs-12 text-center">
                             <div class="aboutborder">
                                 <div><i class="fa fa-money aboutimg" style="font-size: 50px;"></i></div>
                                 <div class="aboutdes"> 3. Pay</div>
-                                <p> Pay fast & secure online with credit card or simply with cash on delivery</p>
+                                <font> Pay fast & secure online with credit card or simply with cash on delivery</font>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-12 col-xs-12 text-center ">
                             <div class="aboutborder">
                                 <div><i class="fa fa-truck aboutimg" style="font-size: 50px; "></i></div>
                                 <div class="aboutdes"> 4. Enjoy </div>
-                                <p> Food is prepared & delivered to your door</p>
+                                <font> Food is prepared & delivered to your door</font>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center" style="margin-top: 5%; border-bottom: 1px solid #f8a631;">
-                        <i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;<p style="font-size: 15px; font-weight: 600; ">On your mobile, tablet, desktop, foodlocker is a delicious experience. Just try and see for yourselves.</p>
+                        <i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;<font style="font-size: 15px; font-weight: 600; ">On your mobile, tablet, desktop, foodlocker is a delicious experience. Just try and see for yourselves.</font>
                     </div>
                 </div>
                 <div class="row">

@@ -25,7 +25,7 @@ require_once 'usersecure.php';
                 <div class="container">
                     <div class="inner">
                         <div class="col-md-12 col-sm-12 col-xs-12 text-center " >
-                            <i class="fa fa-star" ></i>&nbsp;&nbsp;<font style="font-size:30px;">U</font><b style="color: #F8A631;">SER</b>&nbsp;<font style="font-size:30px;">P</font><b style="color:#F8A631;">R<i class="fa fa-circle" ></i>FILE</b>&nbsp;&nbsp;<i class="fa fa-star"></i> 
+                        <font style="font-size:30px;">User Profile</font>
                         </div>
 
                     </div>

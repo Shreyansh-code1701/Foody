@@ -1,5 +1,5 @@
 <?php
-require_once 'conection.php';
+require_once 'connection.php';
 
 $del=mysql_query("delete from cart where userid like '$_SESSION[user]' ");
 

@@ -1,7 +1,5 @@
 <?php
-require_once 'conection.php';
-
-
+require_once 'connection.php';
 ?>
 
 <div class="educate_grid" style="padding: 15px;">

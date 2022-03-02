@@ -1,6 +1,6 @@
 
 <?php
-require_once 'conection.php';
+require_once 'connection.php';
 
 require_once 'PHPMailerAutoload.php';    
     //sendmail("v.savani5@gmail.com", "university", "bas am j");

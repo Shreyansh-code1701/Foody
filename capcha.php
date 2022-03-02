@@ -1,5 +1,5 @@
 <?php
-require_once 'conection.php';
+require_once 'connection.php';
 ?>
 <div class="digit" style="float: left;">
   <?php

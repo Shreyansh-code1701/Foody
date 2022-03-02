@@ -2,8 +2,8 @@
 require_once 'conection.php';
 ?>
 
-
 <?php
+ob_start();
 if($_REQUEST[kona]=="loginpage")
 {
     

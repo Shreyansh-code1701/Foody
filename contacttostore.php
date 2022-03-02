@@ -1,6 +1,6 @@
 
 <?php
-require_once 'conection.php';
+require_once 'connection.php';
 
 $_SESSION[page] = "contact";
 

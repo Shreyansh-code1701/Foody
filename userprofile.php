@@ -1,8 +1,8 @@
-
 <?php
-require_once 'conection.php';
+require_once 'connection.php';
 require_once 'usersecure.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 

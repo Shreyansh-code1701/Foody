@@ -1,7 +1,5 @@
 <?php
-require_once 'conection.php';
-
-
+require_once 'connection.php';
 
 $cm = mysql_query("select * from cart where userid like '$_SESSION[user]' ");
 $cmt = mysql_fetch_array($cmt);

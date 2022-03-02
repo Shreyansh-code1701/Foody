@@ -1,5 +1,5 @@
 <?php
-require_once 'conection.php';
+require_once 'connection.php';
 require_once 'usersecure.php';
 
    if($_SESSION[cartche]!=1)

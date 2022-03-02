@@ -1,8 +1,6 @@
-
 <?php
 require_once 'conection.php';
 $str = "";
-
 if(isset($_REQUEST[main]))
 {
     
@@ -17,7 +15,6 @@ if(isset($_REQUEST[main]))
     $str = $str . ")";
     //echo $str;
 }
-
 if(isset($_REQUEST[store]))
 {
     
@@ -37,7 +34,6 @@ if(isset($_REQUEST[store]))
     $str = $str . ")";
     //echo $str;
 }
-
 if(isset($_REQUEST[type]))
 {
     
@@ -57,7 +53,6 @@ if(isset($_REQUEST[type]))
     $str = $str . ")";
     //echo $str;
 }
-
 if(isset($_REQUEST[price]))
 {
     
@@ -77,13 +72,6 @@ if(isset($_REQUEST[price]))
     $str = $str . ")";
     //echo $str;
 }
-
-
-
-
-
-
-
 if($_REQUEST[kona]=="misssearch")
 {
   

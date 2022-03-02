@@ -1,7 +1,10 @@
 <?php
 require_once 'conection.php';
+?>
 
-if (isset($_REQUEST[send])) 
+<?php
+ob_start();
+if(isset($_REQUEST[send])) 
 {
     $in = mysql_query("select * from registration");
     while ($inn = mysql_fetch_array($in))

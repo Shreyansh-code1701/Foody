@@ -1,6 +1,6 @@
 
 <?php
-require_once 'conection.php';
+require_once 'connection.php';
 require_once 'usersecure.php';
 
 $pr=mysql_query("select * from user where userid like '$_SESSION[user]'");

@@ -1,6 +1,5 @@
-
 <?php
-require_once 'conection.php';
+require_once 'connection.php';
 $_SESSION[page] = "restaurant";
 
 if(isset($_REQUEST[rev]))

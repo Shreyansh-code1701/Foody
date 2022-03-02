@@ -1,5 +1,5 @@
 <?php
-require_once 'conection.php';
+require_once 'connection.php';
 ?>
 <header id="ht-header" class="">
     <div class="mobile-control-toggle">

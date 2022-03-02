@@ -1,5 +1,5 @@
 <?php
-    require_once 'conection.php';
+    require_once 'connection.php';
     unset($_SESSION[ch]);
     $_SESSION[page]="index";
     

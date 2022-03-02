@@ -1,5 +1,5 @@
     <?php
-    require_once 'conection.php';
+    require_once 'connection.php';
     $er=0;
     $ers=1;
     if(isset ($_REQUEST[send]))
